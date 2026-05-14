@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-image: url(img/fundo-site.png);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.container{
+  width:100%;
+  max-width:700px;
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1{
+  text-align:center;
+  margin-bottom:30px;
+  color:#111827;
+}
+
+p{
+  text-align:center;
+  margin-bottom:30px;
+  color:#6b7280;
+  line-height:1.5;
+}
+
+.btn{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#000000;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  margin-bottom:15px;
+}
+
+.btn:hover{
+  background:#1a1a1a;
+}
+
+.numeros{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(70px,1fr));
+  gap:10px;
+}
+
+.numero-btn{
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  background:#e5e7eb;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.numero-btn:hover{
+  background:#d1d5db;
+}
+
+.numero-btn.usada{
+  background:#d1d5db;
+  color:#6b7280;
+  cursor:not-allowed;
+  opacity:.65;
+}
+
+.numero-btn.usada:hover{
+  background:#d1d5db;
+}
+
+.pergunta{
+  font-size:24px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.opcoes{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.opcao{
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#f3f4f6;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.opcao:hover{
+  background:#e5e7eb;
+}
+
+.correta{
+  background:#22c55e !important;
+  color:white;
+}
+
+.errada{
+  background:#ef4444 !important;
+  color:white;
+}
+
+#resetar{
+  margin-top:20px;
+  display:none;
+}
+
+.btn-voltar{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#e5e7eb;
+  color:#111827;
+  font-size:16px;
+  cursor:pointer;
+  margin-bottom:20px;
+  margin-top: 30px;
+}
+
+.btn-voltar:hover{
+  background:#d1d5db;
+}
